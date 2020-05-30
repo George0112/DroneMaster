@@ -8,6 +8,7 @@
 
 import SwiftUI
 import CoreLocation
+import MapKit
 
 let screenWidth: CGFloat = UIScreen.main.bounds.width
 struct ObjectDetail: View {
@@ -17,6 +18,7 @@ struct ObjectDetail: View {
     
     
     var object: Object
+    let location = CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573)
     
     var body: some View {
         VStack{
@@ -55,9 +57,9 @@ struct ObjectDetail: View {
                     .padding()
                     NavigationLink(
                         destination:
-                        MapView(coordinate: CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573))
-                                            .edgesIgnoringSafeArea(.top)
-                                            .frame(height: 300)
+                        MapView(coordinate: location)
+                            .edgesIgnoringSafeArea(.top)
+                            .frame(height: 300)
                     ){
                         Text("Map")
                     }
