@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+//    var video: Video
     var body: some View {
         Text("Hello, World!")
     }
