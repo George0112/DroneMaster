@@ -22,13 +22,6 @@ import Alamofire
 //var jsonPath: String = ""
 var videoData: [Video] = []
 
-var RESPONSE = AF.request("https://e7x111rdwe.execute-api.us-east-1.amazonaws.com/stable")
-    .responseDecodable(of: [Video].self){ response in
-//        debugPrint(response)
-        videoData = response.value!
-        print(videoData)
-    }
-
 //let videoData: [Video] = load("body.json")
 
 func load<T: Decodable>(_ filename: String) -> T {

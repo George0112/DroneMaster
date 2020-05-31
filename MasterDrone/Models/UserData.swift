@@ -12,5 +12,4 @@ import Alamofire
 
 final class UserData: ObservableObject{
     @Published var videos: [Video] = videoData
-    @Published var response = RESPONSE
 }

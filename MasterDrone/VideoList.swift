@@ -19,12 +19,6 @@ struct VideoList: View {
             NavigationView{
                 List{
                     Button(action: {
-                        print(self.userData.videos)
-                        
-                    }){
-                        Text("print")
-                    }
-                    Button(action: {
                         AF.request(
                             "https://gbdm4rp3kk.execute-api.us-east-1.amazonaws.com/stable/takeoff",
                             method: .post)
