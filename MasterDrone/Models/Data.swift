@@ -10,8 +10,26 @@ import Foundation
 import CoreLocation
 import UIKit
 import SwiftUI
+import Alamofire
 
-let videoData: [Video] = load("videos.json")
+//let destination: DownloadRequest.Destination = { _, _ in
+//    let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//    let fileURL = documentsURL.appendingPathComponent("videos.json")
+//
+//    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+//}
+//
+//var jsonPath: String = ""
+var videoData: [Video] = []
+
+var RESPONSE = AF.request("https://e7x111rdwe.execute-api.us-east-1.amazonaws.com/stable")
+    .responseDecodable(of: [Video].self){ response in
+//        debugPrint(response)
+        videoData = response.value!
+        print(videoData)
+    }
+
+//let videoData: [Video] = load("body.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

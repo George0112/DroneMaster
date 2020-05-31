@@ -7,20 +7,29 @@
 //
 
 import SwiftUI
+import URLImage
+import Alamofire
 
 struct VideoRow: View {
+
     
+
     var video: Video
-    
+//    var url: URL = URL(string: video.objects[0].img_url ?? "")!
     var body: some View {
         HStack{
-            video.image
+            URLImage((URL(string: video.objects[0].img_url)! ?? URL(string: ""))!){proxy in
+                proxy.image
                 .resizable()
                 .frame(width: 50, height: 50)
+            }
+//            video.image
+//                .resizable()
+//                .frame(width: 50, height: 50)
             Spacer()
 //            Text(video.id)
 //            Text(video.url)
-            Text(video.timestamp)
+//            Text(video.timestamp)
 //            Text(video.objects[0].location)
         }
     }

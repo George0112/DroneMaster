@@ -1,0 +1,12 @@
+[
+  {
+    "id": "2020/6/1",
+    "objects": [
+      {
+        "object": "person",
+        "img_url": "https://sagemaker-108065701.s3.amazonaws.com/result_img/2020-05-31T06:59:42Z.jpg",
+        "id": "1d35e378-a367-11ea-ac0d-aab9babed18a"
+      }
+    ]
+  }
+]

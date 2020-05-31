@@ -9,6 +9,7 @@
 import SwiftUI
 import CoreLocation
 import MapKit
+import URLImage
 
 let screenWidth: CGFloat = UIScreen.main.bounds.width
 struct ObjectDetail: View {
@@ -29,13 +30,22 @@ struct ObjectDetail: View {
         //            MapView(coordinate: CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573))
         //                .edgesIgnoringSafeArea(.top)
         //                .frame(height: 300)
-                    object.image
-                        .resizable()
-                        .frame(height: 300)
-        //                .offset(y: -130)
-        //                .padding(.bottom, -130)
-                        .overlay(Rectangle().stroke(Color.white, lineWidth: 8))
-                        .shadow(color: Color.white, radius: 20, x: 0, y: 0)
+//                    object.image
+//                        .resizable()
+//                        .frame(height: 300)
+//        //                .offset(y: -130)
+//        //                .padding(.bottom, -130)
+//                        .overlay(Rectangle().stroke(Color.white, lineWidth: 8))
+//                        .shadow(color: Color.white, radius: 20, x: 0, y: 0)
+                    URLImage((URL(string: object.img_url)! ?? URL(string: ""))!){proxy in
+                        proxy.image
+                            .resizable()
+                            .frame(height: 300)
+            //                .offset(y: -130)
+            //                .padding(.bottom, -130)
+                            .overlay(Rectangle().stroke(Color.white, lineWidth: 8))
+                            .shadow(color: Color.white, radius: 20, x: 0, y: 0)
+                    }
                     Spacer()
                     HStack {
                         Text("ID: ")
@@ -46,20 +56,20 @@ struct ObjectDetail: View {
                     HStack {
                         Text("Filename: ")
                         Spacer()
-                        Text(object.imageName)
+                        Text(object.img_url)
                     }
                     .padding()
                     HStack {
                         Text("Position: ")
                         Spacer()
-                        Text(object.location)
+//                        Text(object.location)
                     }
                     .padding()
                     NavigationLink(
                         destination:
                         MapView(coordinate: location)
                             .edgesIgnoringSafeArea(.top)
-                            .frame(height: 300)
+//                            .frame(height: 300)
                     ){
                         Text("Map")
                     }

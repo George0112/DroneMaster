@@ -14,7 +14,7 @@ struct ObjectRow: View {
     
     var body: some View {
         HStack{
-            Text(object.location)
+//            Text(object.location)
             Text(object.object)
         }
     }

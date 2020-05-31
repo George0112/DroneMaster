@@ -30,6 +30,8 @@
 		CFA43C3A24826203001FA94D /* IMG_1518.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C3424826203001FA94D /* IMG_1518.jpg */; };
 		CFA43C3D24826A56001FA94D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C3C24826A56001FA94D /* MapView.swift */; };
 		CFA43C402482B163001FA94D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CFA43C3F2482B163001FA94D /* Alamofire */; };
+		CFA43C4524841C6D001FA94D /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = CFA43C4424841C6D001FA94D /* URLImage */; };
+		CFA43C47248434C8001FA94D /* body.json in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C46248434C8001FA94D /* body.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,7 @@
 		CFA43C3324826203001FA94D /* IMG_1530.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1530.jpg; sourceTree = "<group>"; };
 		CFA43C3424826203001FA94D /* IMG_1518.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1518.jpg; sourceTree = "<group>"; };
 		CFA43C3C24826A56001FA94D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CFA43C46248434C8001FA94D /* body.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = body.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA43C4524841C6D001FA94D /* URLImage in Frameworks */,
 				CFA43C402482B163001FA94D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +141,7 @@
 				CFA43C3324826203001FA94D /* IMG_1530.jpg */,
 				CFA43C3024826202001FA94D /* IMG_4238.JPG */,
 				CFA43C21248247CD001FA94D /* videos.json */,
+				CFA43C46248434C8001FA94D /* body.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			name = MasterDrone;
 			packageProductDependencies = (
 				CFA43C3F2482B163001FA94D /* Alamofire */,
+				CFA43C4424841C6D001FA94D /* URLImage */,
 			);
 			productName = MasterDrone;
 			productReference = CFA43C0424824251001FA94D /* MasterDrone.app */;
@@ -198,6 +204,7 @@
 			mainGroup = CFA43BFB24824251001FA94D;
 			packageReferences = (
 				CFA43C3E2482B163001FA94D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CFA43C4324841C6D001FA94D /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = CFA43C0524824251001FA94D /* Products */;
 			projectDirPath = "";
@@ -221,6 +228,7 @@
 				CFA43C22248247CD001FA94D /* videos.json in Resources */,
 				CFA43C3A24826203001FA94D /* IMG_1518.jpg in Resources */,
 				CFA43C3824826203001FA94D /* IMG_1517.jpg in Resources */,
+				CFA43C47248434C8001FA94D /* body.json in Resources */,
 				CFA43C1124824253001FA94D /* Preview Assets.xcassets in Resources */,
 				CFA43C0E24824253001FA94D /* Assets.xcassets in Resources */,
 			);
@@ -448,6 +456,14 @@
 				minimumVersion = 5.2.1;
 			};
 		};
+		CFA43C4324841C6D001FA94D /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.15;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -455,6 +471,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CFA43C3E2482B163001FA94D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		CFA43C4424841C6D001FA94D /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFA43C4324841C6D001FA94D /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

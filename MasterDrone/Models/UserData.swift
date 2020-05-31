@@ -8,7 +8,9 @@
 
 import Foundation
 import SwiftUI
+import Alamofire
 
 final class UserData: ObservableObject{
-    @Published var videos = videoData
+    @Published var videos: [Video] = videoData
+    @Published var response = RESPONSE
 }

@@ -3,4 +3,150 @@
    uuid = "0C5E6EC6-F207-4695-9F41-E057567CB94C"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A0972ED-CF97-4DC4-B104-3D28F807891E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDrone/Models/Data.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "4A0972ED-CF97-4DC4-B104-3D28F807891E - e0e357592611e6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_6E501680A4DC1534E1EAED42DFD39EDE_func0"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "4A0972ED-CF97-4DC4-B104-3D28F807891E - 6c7debe47c0d0c85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDrone.videoData.unsafeMutableAddressor : Swift.Array&lt;MasterDrone.Video&gt;"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55CA3D62-74A4-457A-939F-9F28D8BABC90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDrone/Models/Data.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "55CA3D62-74A4-457A-939F-9F28D8BABC90 - e0e357592611e6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_6E501680A4DC1534E1EAED42DFD39EDE_func0"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "55CA3D62-74A4-457A-939F-9F28D8BABC90 - 6c7debe47c0d0c85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDrone.videoData.unsafeMutableAddressor : Swift.Array&lt;MasterDrone.Video&gt;"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECD99D0A-EDC1-4932-B97B-CA76A61F581C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDrone/Models/Data.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "ECD99D0A-EDC1-4932-B97B-CA76A61F581C - e0e357592611e6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_6E501680A4DC1534E1EAED42DFD39EDE_func0"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "ECD99D0A-EDC1-4932-B97B-CA76A61F581C - 6c7debe47c0d0c85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDrone.videoData.unsafeMutableAddressor : Swift.Array&lt;MasterDrone.Video&gt;"
+                  moduleName = "MasterDrone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaowen/Desktop/XCode/MasterDrone/MasterDrone/Models/Data.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
