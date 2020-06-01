@@ -13,16 +13,17 @@ import URLImage
 struct VideoList: View {
     
     @EnvironmentObject private var userData: UserData
+    @State var firstLayer = true
     
     var body: some View {
-        HStack{
+        ZStack{
             NavigationView{
                 List{
                     Button(action: {
                         AF.request(
-                            "https://gbdm4rp3kk.execute-api.us-east-1.amazonaws.com/stable/takeoff",
-                            method: .post)
+                            "https://e7x111rdwe.execute-api.us-east-1.amazonaws.com/stable/takeoff",                           method: .post)
                             .responseString{ response in
+                                print(response.value)
                         }
                     }) {
                         HStack{
@@ -31,7 +32,7 @@ struct VideoList: View {
                                 .font(.headline)
                                 .frame(height: 30)
                                 .buttonStyle(/*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Button Style@*/DefaultButtonStyle()/*@END_MENU_TOKEN@*/)
-                            Image(systemName: "airplane")
+                            Image(systemName: "paperplane")
                             Spacer()
                         }
                     }
@@ -49,10 +50,33 @@ struct VideoList: View {
             .onAppear{
                 AF.request("https://e7x111rdwe.execute-api.us-east-1.amazonaws.com/stable")
                     .responseDecodable(of: [Video].self){ response in
-                //        debugPrint(response)
+                        debugPrint(response)
                         self.userData.videos = response.value!
                 }
-                print(videoData)
+            }
+            if firstLayer{
+                VStack{
+                    HStack{
+                        Spacer()
+                        Button(action: {
+                            AF.request("https://e7x111rdwe.execute-api.us-east-1.amazonaws.com/stable")
+                                .responseDecodable(of: [Video].self){ response in
+                                    debugPrint(response)
+                                    self.userData.videos = response.value!
+                                    self.userData.videos = self.userData.videos.sorted{
+                                        $0.id < $1.id
+                                    }
+                            }
+                        }){
+                            Image(systemName: "goforward")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                        }
+                    }
+                    .padding()
+                    Spacer()
+                }
+                .padding(.top, 30.0)
             }
         }
     }

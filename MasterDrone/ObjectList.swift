@@ -21,6 +21,7 @@ struct ObjectList: View {
                             destination: ObjectDetail(object: object)
                         ){
                             ObjectRow(object: object)
+                                .frame(height: 50)
                         }
                     }
                 }

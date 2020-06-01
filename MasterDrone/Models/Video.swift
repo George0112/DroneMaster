@@ -28,6 +28,8 @@ struct Object: Hashable, Codable, Identifiable{
 //    var location: String
     var object: String
     var img_url: String
+    var longitude: String
+    var latitude: String
 }
 
 //extension Object{

@@ -26,17 +26,6 @@ struct ObjectDetail: View {
             HStack(spacing: 15){
                 VStack(spacing: 15){
                     Spacer()
-                    // pin on 24.7959179,120.9899573,
-        //            MapView(coordinate: CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573))
-        //                .edgesIgnoringSafeArea(.top)
-        //                .frame(height: 300)
-//                    object.image
-//                        .resizable()
-//                        .frame(height: 300)
-//        //                .offset(y: -130)
-//        //                .padding(.bottom, -130)
-//                        .overlay(Rectangle().stroke(Color.white, lineWidth: 8))
-//                        .shadow(color: Color.white, radius: 20, x: 0, y: 0)
                     URLImage((URL(string: object.img_url)! ?? URL(string: ""))!){proxy in
                         proxy.image
                             .resizable()
@@ -48,9 +37,13 @@ struct ObjectDetail: View {
                     }
                     Spacer()
                     HStack {
-                        Text("ID: ")
+                        Text("Class: ")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
                         Spacer()
-                        Text(object.id)
+                        Text(object.object)
+                            .font(.subheadline)
+                            .fontWeight(.bold)
                     }
                     .padding()
                     HStack {
@@ -62,9 +55,12 @@ struct ObjectDetail: View {
                     HStack {
                         Text("Position: ")
                         Spacer()
-//                        Text(object.location)
+                        Text(object.longitude)
+                        Text(object.latitude)
                     }
                     .padding()
+                    
+                    // MapView
                     NavigationLink(
                         destination:
                         MapView(coordinate: location)

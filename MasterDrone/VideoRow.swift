@@ -27,7 +27,7 @@ struct VideoRow: View {
 //                .resizable()
 //                .frame(width: 50, height: 50)
             Spacer()
-//            Text(video.id)
+            Text(video.id)
 //            Text(video.url)
 //            Text(video.timestamp)
 //            Text(video.objects[0].location)
