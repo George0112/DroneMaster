@@ -14,6 +14,7 @@ struct VideoList: View {
     
     @EnvironmentObject private var userData: UserData
     @State var firstLayer = true
+    @State var showAlert = false
     
     var body: some View {
         ZStack{
@@ -25,7 +26,8 @@ struct VideoList: View {
                             .responseString{ response in
                                 print(response.value)
                         }
-                    }) {
+                        self.showAlert = true
+                    }){
                         HStack{
                             Spacer()
                             Text("Take Off")
@@ -36,11 +38,13 @@ struct VideoList: View {
                             Spacer()
                         }
                     }
+                    
                     ForEach(userData.videos){ video in
                         NavigationLink(
                             destination: ObjectList(objects: video.objects)
                         ){
                             VideoRow(video: video)
+                                .frame(height: 60)
                         }
                     }
                 }
@@ -78,6 +82,9 @@ struct VideoList: View {
                 }
                 .padding(.top, 30.0)
             }
+        }
+        .alert(isPresented: self.$showAlert){
+            Alert(title: Text("Taking Off"))
         }
     }
 }
