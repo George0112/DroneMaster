@@ -1,0 +1,3 @@
+[submodule "libs/video/ijkplayer"]
+	path = libs/video/ijkplayer
+	url = https://github.com/Bilibili/ijkplayer.git

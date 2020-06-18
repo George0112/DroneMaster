@@ -11,10 +11,11 @@ import SwiftUI
 
 struct Video: Hashable, Codable, Identifiable{
     var id: String
+    var video_url: String
 //    var url: String
 //    var timestamp: String
 //    var thumbnail: String
-    var objects: [Object]
+//    var objects: [Object]
 }
 
 //extension Video{
@@ -23,14 +24,15 @@ struct Video: Hashable, Codable, Identifiable{
 //    }
 //}
 
-struct Object: Hashable, Codable, Identifiable{
-    var id: String
+//struct Object: Hashable, Codable, Identifiable{
+//    var id: String
+//    var video_url: String
 //    var location: String
-    var object: String
-    var img_url: String
-    var longitude: String
-    var latitude: String
-}
+//    var object: String
+//    var img_url: String
+//    var longitude: String
+//    var latitude: String
+//}
 
 //extension Object{
 //    var image: Image{

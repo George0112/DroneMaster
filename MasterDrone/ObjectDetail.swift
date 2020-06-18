@@ -19,7 +19,7 @@ struct ObjectDetail: View {
     
     
     var object: Object
-    let location = CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573)
+//    let location = CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573)
     
     var body: some View {
         VStack{

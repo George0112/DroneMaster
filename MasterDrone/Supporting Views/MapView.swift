@@ -20,7 +20,7 @@ struct MapView: UIViewRepresentable {
         let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
-        let location = CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573)
+//        let location = CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573)
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = "Drone"
@@ -31,6 +31,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: CLLocationCoordinate2D(latitude: 24.7959179, longitude: 120.9899573))
+        MapView(coordinate: location)
     }
 }

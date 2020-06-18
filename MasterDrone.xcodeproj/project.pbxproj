@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF8CE20B2494B4340011BF4E /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8CE20A2494B4340011BF4E /* Index.swift */; };
+		CF8CE20D2494C2B70011BF4E /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8CE20C2494C2B70011BF4E /* Stream.swift */; };
+		CFA04B8B24952018009CC48B /* RouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA04B8A24952018009CC48B /* RouteStep.swift */; };
+		CFA04B9724954E49009CC48B /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = CFA04B9624954E49009CC48B /* ASCollectionView */; };
 		CFA43C0824824251001FA94D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C0724824251001FA94D /* AppDelegate.swift */; };
 		CFA43C0A24824251001FA94D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C0924824251001FA94D /* SceneDelegate.swift */; };
 		CFA43C0C24824251001FA94D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C0B24824251001FA94D /* ContentView.swift */; };
@@ -19,9 +23,6 @@
 		CFA43C242482488C001FA94D /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C232482488C001FA94D /* VideoRow.swift */; };
 		CFA43C2624824C4F001FA94D /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C2524824C4F001FA94D /* UserData.swift */; };
 		CFA43C2824824D5D001FA94D /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C2724824D5D001FA94D /* VideoList.swift */; };
-		CFA43C2A24824F59001FA94D /* ObjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C2924824F59001FA94D /* ObjectRow.swift */; };
-		CFA43C2C248254D4001FA94D /* ObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C2B248254D4001FA94D /* ObjectList.swift */; };
-		CFA43C2E24825D7C001FA94D /* ObjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA43C2D24825D7C001FA94D /* ObjectDetail.swift */; };
 		CFA43C3524826203001FA94D /* IMG_1516.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C2F24826202001FA94D /* IMG_1516.jpg */; };
 		CFA43C3624826203001FA94D /* IMG_4238.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C3024826202001FA94D /* IMG_4238.JPG */; };
 		CFA43C3724826203001FA94D /* IMG_1529.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C3124826202001FA94D /* IMG_1529.jpg */; };
@@ -32,9 +33,29 @@
 		CFA43C402482B163001FA94D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CFA43C3F2482B163001FA94D /* Alamofire */; };
 		CFA43C4524841C6D001FA94D /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = CFA43C4424841C6D001FA94D /* URLImage */; };
 		CFA43C47248434C8001FA94D /* body.json in Resources */ = {isa = PBXBuildFile; fileRef = CFA43C46248434C8001FA94D /* body.json */; };
+		CFB934522494CA70003BA5A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB934512494CA70003BA5A9 /* Constants.swift */; };
+		CFB934542494CF75003BA5A9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB934532494CF74003BA5A9 /* Route.swift */; };
+		CFB934562494CFDB003BA5A9 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB934552494CFDB003BA5A9 /* Spot.swift */; };
+		CFBE4A152494D48800F53884 /* SpotMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE4A142494D48800F53884 /* SpotMapView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CFA04B9424954D3B009CC48B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CF8CE20A2494B4340011BF4E /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		CF8CE20C2494C2B70011BF4E /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		CFA04B8A24952018009CC48B /* RouteStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStep.swift; sourceTree = "<group>"; };
 		CFA43C0424824251001FA94D /* MasterDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA43C0724824251001FA94D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFA43C0924824251001FA94D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +70,6 @@
 		CFA43C232482488C001FA94D /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
 		CFA43C2524824C4F001FA94D /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		CFA43C2724824D5D001FA94D /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
-		CFA43C2924824F59001FA94D /* ObjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectRow.swift; sourceTree = "<group>"; };
-		CFA43C2B248254D4001FA94D /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
-		CFA43C2D24825D7C001FA94D /* ObjectDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetail.swift; sourceTree = "<group>"; };
 		CFA43C2F24826202001FA94D /* IMG_1516.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1516.jpg; sourceTree = "<group>"; };
 		CFA43C3024826202001FA94D /* IMG_4238.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4238.JPG; sourceTree = "<group>"; };
 		CFA43C3124826202001FA94D /* IMG_1529.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1529.jpg; sourceTree = "<group>"; };
@@ -60,6 +78,10 @@
 		CFA43C3424826203001FA94D /* IMG_1518.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1518.jpg; sourceTree = "<group>"; };
 		CFA43C3C24826A56001FA94D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CFA43C46248434C8001FA94D /* body.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = body.json; sourceTree = "<group>"; };
+		CFB934512494CA70003BA5A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFB934532494CF74003BA5A9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CFB934552494CFDB003BA5A9 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		CFBE4A142494D48800F53884 /* SpotMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA43C4524841C6D001FA94D /* URLImage in Frameworks */,
+				CFA04B9724954E49009CC48B /* ASCollectionView in Frameworks */,
 				CFA43C402482B163001FA94D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,12 +119,16 @@
 			children = (
 				CFA43C1B248245DB001FA94D /* Models */,
 				CFA43C0724824251001FA94D /* AppDelegate.swift */,
+				CF8CE20A2494B4340011BF4E /* Index.swift */,
+				CFB934552494CFDB003BA5A9 /* Spot.swift */,
+				CFB934532494CF74003BA5A9 /* Route.swift */,
+				CFA04B8A24952018009CC48B /* RouteStep.swift */,
+				CFB934512494CA70003BA5A9 /* Constants.swift */,
+				CF8CE20C2494C2B70011BF4E /* Stream.swift */,
 				CFA43C0924824251001FA94D /* SceneDelegate.swift */,
 				CFA43C232482488C001FA94D /* VideoRow.swift */,
 				CFA43C2724824D5D001FA94D /* VideoList.swift */,
-				CFA43C2924824F59001FA94D /* ObjectRow.swift */,
-				CFA43C2B248254D4001FA94D /* ObjectList.swift */,
-				CFA43C2D24825D7C001FA94D /* ObjectDetail.swift */,
+				CFBE4A142494D48800F53884 /* SpotMapView.swift */,
 				CFA43C0B24824251001FA94D /* ContentView.swift */,
 				CFA43C3B24826A2B001FA94D /* Supporting Views */,
 				CFA43C2024824780001FA94D /* Resources */,
@@ -164,6 +191,7 @@
 				CFA43C0024824251001FA94D /* Sources */,
 				CFA43C0124824251001FA94D /* Frameworks */,
 				CFA43C0224824251001FA94D /* Resources */,
+				CFA04B9424954D3B009CC48B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +201,7 @@
 			packageProductDependencies = (
 				CFA43C3F2482B163001FA94D /* Alamofire */,
 				CFA43C4424841C6D001FA94D /* URLImage */,
+				CFA04B9624954E49009CC48B /* ASCollectionView */,
 			);
 			productName = MasterDrone;
 			productReference = CFA43C0424824251001FA94D /* MasterDrone.app */;
@@ -205,6 +234,7 @@
 			packageReferences = (
 				CFA43C3E2482B163001FA94D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CFA43C4324841C6D001FA94D /* XCRemoteSwiftPackageReference "url-image" */,
+				CFA04B9524954E49009CC48B /* XCRemoteSwiftPackageReference "ASCollectionView" */,
 			);
 			productRefGroup = CFA43C0524824251001FA94D /* Products */;
 			projectDirPath = "";
@@ -243,16 +273,20 @@
 			files = (
 				CFA43C0824824251001FA94D /* AppDelegate.swift in Sources */,
 				CFA43C3D24826A56001FA94D /* MapView.swift in Sources */,
-				CFA43C2A24824F59001FA94D /* ObjectRow.swift in Sources */,
+				CFB934562494CFDB003BA5A9 /* Spot.swift in Sources */,
+				CFBE4A152494D48800F53884 /* SpotMapView.swift in Sources */,
 				CFA43C0A24824251001FA94D /* SceneDelegate.swift in Sources */,
+				CF8CE20B2494B4340011BF4E /* Index.swift in Sources */,
+				CFB934542494CF75003BA5A9 /* Route.swift in Sources */,
+				CFB934522494CA70003BA5A9 /* Constants.swift in Sources */,
 				CFA43C2624824C4F001FA94D /* UserData.swift in Sources */,
 				CFA43C0C24824251001FA94D /* ContentView.swift in Sources */,
 				CFA43C1D248245F7001FA94D /* Data.swift in Sources */,
-				CFA43C2C248254D4001FA94D /* ObjectList.swift in Sources */,
+				CFA04B8B24952018009CC48B /* RouteStep.swift in Sources */,
 				CFA43C2824824D5D001FA94D /* VideoList.swift in Sources */,
 				CFA43C242482488C001FA94D /* VideoRow.swift in Sources */,
 				CFA43C1F24824631001FA94D /* Video.swift in Sources */,
-				CFA43C2E24825D7C001FA94D /* ObjectDetail.swift in Sources */,
+				CF8CE20D2494C2B70011BF4E /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +482,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CFA04B9524954E49009CC48B /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
 		CFA43C3E2482B163001FA94D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -467,6 +509,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CFA04B9624954E49009CC48B /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFA04B9524954E49009CC48B /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
 		CFA43C3F2482B163001FA94D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CFA43C3E2482B163001FA94D /* XCRemoteSwiftPackageReference "Alamofire" */;
