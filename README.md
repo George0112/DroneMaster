@@ -13,6 +13,7 @@
 * Simple Queue Service (SQS)
 * Rekognition
 * DynamoDB
+* Lambda
 
 ## Start your own HTTP Live Stream Server
 Recommended to use [docker](https://github.com/alfg/docker-nginx-rtmp?fbclid=IwAR2WQK0_RA9ycH8AKaK6JPynDyv97iWuXxAf6mmockT7Y809-XV9GjbL9S8)
