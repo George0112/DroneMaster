@@ -12,17 +12,7 @@ import UIKit
 import SwiftUI
 import Alamofire
 
-//let destination: DownloadRequest.Destination = { _, _ in
-//    let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-//    let fileURL = documentsURL.appendingPathComponent("videos.json")
-//
-//    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
-//}
-//
-//var jsonPath: String = ""
 var videoData: [Video] = []
-
-//let videoData: [Video] = load("body.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

@@ -199,9 +199,3 @@ struct Route_Previews: PreviewProvider {
         Route()
     }
 }
-
-//struct ContentView: View{
-//    var body: some View{
-//        Text("Hello")
-//    }
-//}

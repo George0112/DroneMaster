@@ -11,8 +11,6 @@ import SwiftUI
 struct Index: View {
     
     @EnvironmentObject private var userData: UserData
-//    @State var routeIsPresented: Bool = false
-//    @State var spotIsPresented: Bool = false
     @State var video_url = stream_url
     @State var playerOpacity:Double = 0.0
     @State var videoIndex = 0
@@ -80,12 +78,6 @@ struct Index: View {
                     Stream(video_url: userData.videos[videoIndex].video_url)
                 }
             }
-//            VStack{
-//                Stream(video_url: stream_url)
-//                .opacity(playerOpacity)
-//            }
-//            .background(Color.white)
-//            .opacity(playerOpacity)
         }
     }
 }

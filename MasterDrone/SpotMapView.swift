@@ -51,19 +51,3 @@ struct SpotMapView: UIViewRepresentable {
         }
     }
 }
-
-//struct SpotMapView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SpotMapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), coordinate: location)
-//    }
-//}
-//
-//extension MKPointAnnotation {
-//    static var example: MKPointAnnotation {
-//        let annotation = MKPointAnnotation()
-//        annotation.title = "London"
-//        annotation.subtitle = "Home to the 2012 Summer Olympics."
-//        annotation.coordinate = location
-//        return annotation
-//    }
-//}
